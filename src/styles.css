@@ -1,0 +1,161 @@
+:root {
+  --teal: #0594a9;
+}
+
+/* 
+bar colors
+fdc063
+05c3cc
+ff8b8b
+#ff904c
+*/
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4;
+  /* color: rgb(255, 144, 76); */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.list-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.list-item {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding: 1.5rem 1rem;
+}
+
+.list-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.list-item.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.list-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Why Scube */
+.why-scube {
+  padding: 4rem 4rem 6rem;
+  /* margin: 2rem 0 4rem 0; */
+}
+
+.why-scube-header {
+  font-size: 2.4rem !important;
+  text-align: center;
+  margin: 1rem 0 4rem !important;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  letter-spacing: 6px !important;
+  color: #555;
+}
+
+.why-scube-cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.why-scube-card {
+  text-align: center;
+  background-color: #fff;
+  max-width: 13rem;
+  padding: 2rem 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+  transform: scale(1.05);
+  color: #555;
+}
+
+.why-scube-card p {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+
+.why-scube-card:hover {
+  transform: translateY(-8px) scale(1.1);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.why-scube-icon {
+  color: var(--teal);
+  font-size: 80px;
+}
+
+.why-scube-icon.MuiSvgIcon-root {
+  font-size: 3.4rem !important;
+}
+
+.why-scube-card-header {
+  font-size: 1.3rem !important;
+  /* font-weight: 500 !important; */
+}
+
+/* Performance */
+.performance {
+  background-color: #fff;
+  padding: 4rem;
+}
+
+.performance-header {
+  font-size: 2rem !important;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.CircularProgressbar-text {
+  font-weight: 700;
+  transform: translate(2px, 4px);
+  font-size: 2rem !important;
+}
+
+.progressbar-title {
+  color: #333;
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.improvement-bullet {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 3px;
+  background-color: black;
+  transform: translateY(-2px);
+}
+
+.no-flickr {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
