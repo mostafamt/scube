@@ -26,6 +26,16 @@ code {
     monospace;
 }
 
+.section-title {
+  font-size: 2.4rem !important;
+  text-align: center;
+  margin: 1rem 0 4rem !important;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  letter-spacing: 6px !important;
+  color: #555;
+}
+
 .list-items {
   list-style: none;
   display: flex;
@@ -59,17 +69,6 @@ code {
 /* Why Scube */
 .why-scube {
   padding: 4rem 4rem 6rem;
-  /* margin: 2rem 0 4rem 0; */
-}
-
-.why-scube-header {
-  font-size: 2.4rem !important;
-  text-align: center;
-  margin: 1rem 0 4rem !important;
-  text-transform: uppercase;
-  letter-spacing: 1rem;
-  letter-spacing: 6px !important;
-  color: #555;
 }
 
 .why-scube-cards {
@@ -105,13 +104,9 @@ code {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.why-scube-icon {
-  color: var(--teal);
-  font-size: 80px;
-}
-
-.why-scube-icon.MuiSvgIcon-root {
+.why-scube-card .MuiSvgIcon-root {
   font-size: 3.4rem !important;
+  color: var(--teal) !important;
 }
 
 .why-scube-card-header {
@@ -129,6 +124,12 @@ code {
   font-size: 2rem !important;
   text-align: center;
   text-transform: uppercase;
+}
+
+.performance .progressbars {
+  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .CircularProgressbar-text {
@@ -158,4 +159,123 @@ code {
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
   transform: translateZ(0);
+}
+
+/* STORY */
+.story {
+  padding: 4rem;
+  color: #555;
+}
+
+.story .story-right {
+  margin-top: 2rem;
+}
+
+.story .img {
+  text-align: center;
+}
+
+/* SERVICES */
+.services {
+  background-color: #fff;
+  padding: 4rem;
+  color: #555;
+}
+
+.services .service-card {
+  text-align: center;
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+  gap: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.services .service-card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transform: translateY(-3px) scale(1.05);
+}
+
+.services .MuiSvgIcon-root {
+  color: var(--teal);
+  font-size: 3.4rem;
+  stroke-width: 2;
+  /* color: linear-gradient(
+    135deg,
+    rgb(32, 167, 172) 11%,
+    rgb(33, 138, 174) 49%,
+    rgb(24, 42, 115) 100%
+  ); */
+}
+
+.services .MuiSvgIcon-root path {
+  stroke-width: 1;
+}
+
+/* COTACT */
+.contact {
+  padding: 4rem 0 0;
+  background-color: #333;
+  color: #fff;
+}
+
+.contact .form-control {
+  width: 100%;
+  color: #fff;
+}
+
+.contact .MuiInput-root {
+  color: #fff;
+}
+
+.contact .MuiInput-root::before {
+  border-color: #fff;
+}
+
+.contact .MuiSvgIcon-root {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.contact .list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact .contact-info {
+  margin-top: 1rem;
+}
+
+.contact .contact-info .MuiSvgIcon-root {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.contact .contact-info p {
+  text-transform: uppercase;
+}
+
+.contact .copyright {
+  border-top: 1px solid white;
+  padding: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.contact .contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  /* text-align: center; */
+}
+
+.contact .contact-left p {
+  text-align: center;
 }
