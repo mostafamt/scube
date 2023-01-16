@@ -6,6 +6,8 @@ import WhyScube from "../components/WhyScube";
 import Story from "../components/Story";
 import Services from "../components/Services";
 import Contact from "../components/Contact";
+import Teachers from "../components/Teachers";
+import Students from "../components/Students";
 
 const Scube = () => {
   return (
@@ -15,6 +17,8 @@ const Scube = () => {
       <Performance />
       <Story />
       <Services />
+      <Students />
+      <Teachers />
       <Contact />
     </div>
   );

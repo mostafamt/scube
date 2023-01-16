@@ -36,6 +36,16 @@ code {
   color: #555;
 }
 
+.section-title:after {
+  display: block;
+  height: 2px;
+  background-color: var(--teal);
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
 .list-items {
   list-style: none;
   display: flex;
@@ -216,6 +226,117 @@ code {
 
 .services .MuiSvgIcon-root path {
   stroke-width: 1;
+}
+
+/* STUDENTS */
+.students {
+  padding: 4rem 0;
+}
+
+.students .swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.students .swiper-slide {
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #000;
+  border-radius: 5px;
+}
+
+.students .swiper-slide img {
+  opacity: 0.8;
+  transition: all 0.3s;
+  /* border-radius: 10px; */
+}
+
+.students .swiper-slide img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.students .swiper-slide:hover .img-content {
+  display: none;
+}
+
+.students .img-content {
+  position: absolute;
+  color: #fff;
+  top: 70%;
+  left: 50%;
+  opacity: 1;
+  transform: translateX(-50%);
+  width: 80%;
+  text-align: center;
+}
+
+/* .students .swiper-button-prev {
+  transform: translateX(-0.5rem);
+  z-index: 4 !important;
+}
+
+.students .swiper-button-next {
+  transform: translateX(0.5rem);
+  z-index: 4 !important;
+} */
+
+/* TEACHERS */
+.teachers {
+  background-color: #fff;
+  padding: 4rem;
+}
+
+.teachers .swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /* display: flex; */
+}
+
+.teachers .swiper-slide {
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #000;
+  border-radius: 5px;
+}
+
+.teachers .swiper-slide img {
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.teachers .swiper-slide img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.teachers .swiper-slide:hover .img-content {
+  display: none;
+}
+
+.teachers .img-content {
+  position: absolute;
+  color: #fff;
+  top: 70%;
+  left: 50%;
+  opacity: 1;
+  transform: translateX(-50%);
+  width: 80%;
+  text-align: center;
+  transition: all 0.3s;
 }
 
 /* COTACT */
