@@ -7,6 +7,7 @@ import TransformIcon from "@mui/icons-material/Transform";
 import SchoolIcon from "@mui/icons-material/School";
 import AdjustIcon from "@mui/icons-material/Adjust";
 import BarChartIcon from "@mui/icons-material/BarChart";
+import { SchoolOutlined } from "@mui/icons-material";
 
 export const pages = [
   <Scube />,
@@ -40,7 +41,7 @@ export const SliderText = [
 
 export const WhyScubeIcons = [
   <TransformIcon />,
-  <SchoolIcon />,
+  <SchoolOutlined />,
   <AdjustIcon />,
   <BarChartIcon />,
 ];

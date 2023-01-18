@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Box, Grid as MGrid } from "@mui/material";
+import Grid2 from "@mui/material/Unstable_Grid2"; // Grid version 2
 
 // Import Swiper styles
 import "swiper/css";
@@ -17,153 +18,153 @@ const Students = () => {
     <Box className="students">
       <Container>
         <Typography variant="h2" className="section-title">
-          Starts of The month
+          Stars of The month
         </Typography>
 
         <MGrid container spacing={4}>
           <MGrid item xs={8}>
             <div
               style={{
-                height: "25rem",
+                height: "26rem",
               }}
             >
               <Swiper
-                slidesPerView={4}
-                grid={{
-                  rows: 2,
-                }}
-                spaceBetween={40}
-                pagination={{
-                  clickable: true,
-                }}
                 navigation={true}
-                modules={[Grid, Pagination, Navigation]}
+                modules={[Navigation]}
                 className="mySwiper"
               >
                 <SwiperSlide>
-                  <img
-                    src="/assets/student-1.jpg"
-                    alt="student"
-                    height={"100%"}
-                  />
-                  <Box className="img-content">
-                    <Typography>Student Name</Typography>
-                    <Typography>Grade 6</Typography>
+                  <Box className="img-box">
+                    <img src="/assets/student-1.jpg" alt="student" />
+                    <Box className="img-content">
+                      <Typography>Student Name</Typography>
+                      <Typography>Grade 4</Typography>
+                    </Box>
+                  </Box>
+                  <Box className="img-box">
+                    <img src="/assets/student-2.jpg" alt="student" />
+                    <Box className="img-content">
+                      <Typography>Student Name</Typography>
+                      <Typography>Grade 4</Typography>
+                    </Box>
+                  </Box>
+                  <Box className="img-box">
+                    <img src="/assets/student-3.jpg" alt="student" />
+                    <Box className="img-content">
+                      <Typography>Student Name</Typography>
+                      <Typography>Grade 4</Typography>
+                    </Box>
+                  </Box>
+                  <Box className="img-box">
+                    <img src="/assets/student-4.jpg" alt="student" />
+                    <Box className="img-content">
+                      <Typography>Student Name</Typography>
+                      <Typography>Grade 4</Typography>
+                    </Box>
+                  </Box>
+                  <Box className="img-box">
+                    <img src="/assets/student-1.jpg" alt="student" />
+                    <Box className="img-content">
+                      <Typography>Student Name</Typography>
+                      <Typography>Grade 4</Typography>
+                    </Box>
+                  </Box>
+                  <Box className="img-box">
+                    <img src="/assets/student-2.jpg" alt="student" />
+                    <Box className="img-content">
+                      <Typography>Student Name</Typography>
+                      <Typography>Grade 4</Typography>
+                    </Box>
+                  </Box>
+                  <Box className="img-box">
+                    <img src="/assets/student-3.jpg" alt="student" />
+                    <Box className="img-content">
+                      <Typography>Student Name</Typography>
+                      <Typography>Grade 4</Typography>
+                    </Box>
+                  </Box>
+                  <Box className="img-box">
+                    <img src="/assets/student-4.jpg" alt="student" />
+                    <Box className="img-content">
+                      <Typography>Student Name</Typography>
+                      <Typography>Grade 4</Typography>
+                    </Box>
                   </Box>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img
-                    src="/assets/student-2.jpg"
-                    alt="student"
-                    height={"100%"}
-                  />
-                  <Box className="img-content">
-                    <Typography>Student Name</Typography>
-                    <Typography>Grade 6</Typography>
+                  <Box className="img-box">
+                    <img src="/assets/student-1.jpg" alt="student" />
+                    <Box className="img-content">
+                      <Typography>Student Name</Typography>
+                      <Typography>Grade 4</Typography>
+                    </Box>
                   </Box>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="/assets/student-3.jpg"
-                    alt="student"
-                    height={"100%"}
-                  />
-                  <Box className="img-content">
-                    <Typography>Student Name</Typography>
-                    <Typography>Grade 6</Typography>
+                  <Box className="img-box">
+                    <img src="/assets/student-2.jpg" alt="student" />
+                    <Box className="img-content">
+                      <Typography>Student Name</Typography>
+                      <Typography>Grade 4</Typography>
+                    </Box>
                   </Box>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="/assets/student-4.jpg"
-                    alt="student"
-                    height={"100%"}
-                  />
-                  <Box className="img-content">
-                    <Typography>Student Name</Typography>
-                    <Typography>Grade 6</Typography>
+                  <Box className="img-box">
+                    <img src="/assets/student-3.jpg" alt="student" />
+                    <Box className="img-content">
+                      <Typography>Student Name</Typography>
+                      <Typography>Grade 4</Typography>
+                    </Box>
                   </Box>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="/assets/student-1.jpg"
-                    alt="student"
-                    height={"100%"}
-                  />
-                  <Box className="img-content">
-                    <Typography>Student Name</Typography>
-                    <Typography>Grade 6</Typography>
+                  <Box className="img-box">
+                    <img src="/assets/student-4.jpg" alt="student" />
+                    <Box className="img-content">
+                      <Typography>Student Name</Typography>
+                      <Typography>Grade 4</Typography>
+                    </Box>
                   </Box>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="/assets/student-2.jpg"
-                    alt="student"
-                    height={"100%"}
-                  />
-                  <Box className="img-content">
-                    <Typography>Student Name</Typography>
-                    <Typography>Grade 6</Typography>
+                  <Box className="img-box">
+                    <img src="/assets/student-1.jpg" alt="student" />
+                    <Box className="img-content">
+                      <Typography>Student Name</Typography>
+                      <Typography>Grade 4</Typography>
+                    </Box>
                   </Box>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="/assets/student-3.jpg"
-                    alt="student"
-                    height={"100%"}
-                  />
-                  <Box className="img-content">
-                    <Typography>Student Name</Typography>
-                    <Typography>Grade 6</Typography>
+                  <Box className="img-box">
+                    <img src="/assets/student-2.jpg" alt="student" />
+                    <Box className="img-content">
+                      <Typography>Student Name</Typography>
+                      <Typography>Grade 4</Typography>
+                    </Box>
                   </Box>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="/assets/student-4.jpg"
-                    alt="student"
-                    height={"100%"}
-                  />
-                  <Box className="img-content">
-                    <Typography>Student Name</Typography>
-                    <Typography>Grade 6</Typography>
+                  <Box className="img-box">
+                    <img src="/assets/student-3.jpg" alt="student" />
+                    <Box className="img-content">
+                      <Typography>Student Name</Typography>
+                      <Typography>Grade 4</Typography>
+                    </Box>
                   </Box>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="/assets/student-1.jpg"
-                    alt="student"
-                    height={"100%"}
-                  />
-                  <Box className="img-content">
-                    <Typography>Student Name</Typography>
-                    <Typography>Grade 6</Typography>
-                  </Box>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="/assets/student-2.jpg"
-                    alt="student"
-                    height={"100%"}
-                  />
-                  <Box className="img-content">
-                    <Typography>Student Name</Typography>
-                    <Typography>Grade 6</Typography>
+                  <Box className="img-box">
+                    <img src="/assets/student-4.jpg" alt="student" />
+                    <Box className="img-content">
+                      <Typography>Student Name</Typography>
+                      <Typography>Grade 4</Typography>
+                    </Box>
                   </Box>
                 </SwiperSlide>
               </Swiper>
             </div>
           </MGrid>
           <MGrid item xs={4}>
-            <Box
-              sx={{
-                border: "1px  solid  black",
-                height: "90%",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              Message to parents
+            <Box className="message">
+              <Typography component="h6" className="message-title">
+                Message to Parents
+              </Typography>
+              <Typography>
+                Our students of today are the leaders of tomorrow; their
+                learning knowledge are the society-uplifting arm, as much
+                knowledge they gain and understand as much our society and
+                economy will boom. Let us SCube and You, the parents, work
+                together hand in hand to help our future leaders gain knowledge
+                and learn the best.
+              </Typography>
             </Box>
           </MGrid>
         </MGrid>

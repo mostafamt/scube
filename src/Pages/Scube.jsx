@@ -14,7 +14,7 @@ const Scube = () => {
     <div>
       <Header />
       <WhyScube />
-      <Performance />
+      {/* <Performance /> */}
       <Story />
       <Services />
       <Students />

@@ -28,11 +28,11 @@ const Teachers = () => {
               <Swiper
                 slidesPerView={3}
                 spaceBetween={30}
-                pagination={{
-                  clickable: true,
-                }}
+                // pagination={{
+                //   clickable: true,
+                // }}
                 navigation={true}
-                modules={[Pagination, Navigation]}
+                modules={[Navigation]}
                 className="mySwiper"
               >
                 <SwiperSlide>
@@ -83,16 +83,19 @@ const Teachers = () => {
             </div>
           </Grid>
           <Grid item xs={4}>
-            <Box
-              sx={{
-                border: "1px solid black",
-                height: "100%",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              Message to Teachers
+            <Box className="message">
+              <Typography component="h6" className="message-title">
+                Message to Teachers
+              </Typography>
+              <Typography>
+                Teachers are the soldiers of the education army and the drivers
+                of the vehicle of knowledge management, without them the vehicle
+                of learning is out of gas. SCube SILK MS is relying on you to
+                fuel the Knowledgebase with your innovative teaching ides and
+                contents. Let us, SCube and You, the teaches, work together hand
+                in hand to help our students to be the best over all of their
+                peers and get the best education ever.
+              </Typography>
             </Box>
           </Grid>
         </Grid>

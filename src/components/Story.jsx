@@ -36,8 +36,8 @@ const Story = () => {
   };
 
   return (
-    <Container>
-      <Box className="story">
+    <Box className="story">
+      <Container>
         <Typography variant="h2" className="section-title">
           Our Message
         </Typography>
@@ -113,8 +113,8 @@ const Story = () => {
             </Box>
           </Grid>
         </Grid>
-      </Box>
-    </Container>
+      </Container>
+    </Box>
   );
 };
 

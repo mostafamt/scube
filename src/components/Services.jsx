@@ -2,21 +2,22 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import ServicesCard from "./ServicesCard";
 import {
-  Bookmark,
-  Extension,
+  BookmarkBorderOutlined,
+  ExtensionOutlined,
   Language,
-  Laptop,
-  LocalLibrary,
-  QuestionAnswer,
+  LaptopMacOutlined,
+  LocalLibraryOutlined,
+  QuestionAnswerOutlined,
 } from "@mui/icons-material";
+import Events from "./Events/Events";
 
 const serviceCardIcons = [
-  <Laptop />,
-  <LocalLibrary />,
+  <LaptopMacOutlined />,
+  <LocalLibraryOutlined />,
   <Language />,
-  <Extension />,
-  <Bookmark />,
-  <QuestionAnswer />,
+  <ExtensionOutlined />,
+  <BookmarkBorderOutlined />,
+  <QuestionAnswerOutlined />,
 ];
 const serviceCardHeaders = [
   "Smart Study Room",
@@ -38,22 +39,30 @@ const serviceCardTexts = [
 const Services = () => {
   return (
     <Box className="services">
-      <Container>
-        <Typography variant="h2" className="section-title" align="center">
-          What Services We Provide
-        </Typography>
-        <Grid container spacing={4} rowSpacing={8}>
-          {serviceCardIcons.map((icon, idx) => (
-            <Grid key={idx} item xs={4}>
-              <ServicesCard
-                icon={icon}
-                title={serviceCardHeaders[idx]}
-                text={serviceCardTexts[idx]}
-              />
-            </Grid>
-          ))}
+      {/* <Container> */}
+      <Typography variant="h2" className="section-title" align="center">
+        What Services We Provide
+      </Typography>
+      <Grid container spacing={6}>
+        <Grid item xs={9}>
+          <Grid container spacing={4}>
+            {serviceCardIcons.map((icon, idx) => (
+              <Grid key={idx} item xs={4}>
+                <ServicesCard
+                  className="service-card"
+                  icon={icon}
+                  title={serviceCardHeaders[idx]}
+                  text={serviceCardTexts[idx]}
+                />
+              </Grid>
+            ))}
+          </Grid>
         </Grid>
-      </Container>
+        <Grid item xs={3}>
+          <Events />
+        </Grid>
+      </Grid>
+      {/* </Container> */}
     </Box>
   );
 };
