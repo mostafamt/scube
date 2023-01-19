@@ -39,24 +39,20 @@ const contactIcons = [
 const Contact = () => {
   return (
     <Box className="contact">
-      <Container>
-        <Typography
-          variant="h2"
-          className="section-title"
-          sx={{ color: "#fff" }}
-        >
+      <Container maxWidth="xl">
+        <Typography variant="h2" className="section-title">
           Get in Touch
         </Typography>
 
-        <Grid container spacing={4} alignItems="center">
+        <Grid container spacing={8} className="grid">
           <Grid item xs={3}>
-            <Box className="contact-left">
-              <img src="/assets/scube.png" alt="logo" height="120" />
-              <Typography>
+            <Box className="contact-scube">
+              <img src="/assets/scube.png" alt="logo" />
+              <Typography className="justify">
                 The provider of research-based innovative intelligent solutions
                 for Asynchronous e-Learning
               </Typography>
-              <Box className="contact-info">
+              <Box className="scube-info">
                 <Typography>Contact Information</Typography>
                 <ul className="list">
                   <li>
@@ -91,7 +87,6 @@ const Contact = () => {
                         id="input-with-icon-adornment"
                         multiline={label === "Your Message" ? true : false}
                         rows={label === "Your Message" ? 3 : null}
-                        // color="success"
                         startAdornment={
                           <InputAdornment position="start">
                             {contactIcons[idx]}
@@ -109,31 +104,22 @@ const Contact = () => {
               </Grid>
             </form>
           </Grid>
-          <Grid item xs={3}>
-            <Box
-              sx={{
-                border: "1px solid white",
-                height: "150px",
-                margin: "1rem",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              School Logo
-            </Box>
-            <Box
-              sx={{
-                border: "1px solid white",
-                height: "150px",
-                margin: "1rem",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              School Contact Info
-            </Box>
+          <Grid item xs={3} className="school-info">
+            <img src="/assets/school-logo.png" alt="school-logo" />
+            <ul className="list">
+              <li>
+                <LocationOnOutlined />
+                Zahraa Nasr City, beside to Tulip club
+              </li>
+              <li>
+                <LocalPhoneOutlined />
+                02 23835443
+              </li>
+              <li>
+                <MailOutlineOutlined />
+                ips.zahraanasrcity@gmail.com
+              </li>
+            </ul>
           </Grid>
         </Grid>
       </Container>
