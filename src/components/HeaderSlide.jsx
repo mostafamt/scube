@@ -6,17 +6,34 @@ const HeaderSlide = ({ children, imgSrc }) => {
     <Box
       sx={{
         width: "100vw",
-        height: "90vh",
+        height: "80vh",
         color: "black",
-        backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${imgSrc})`,
+        // backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${imgSrc})`,
+        backgroundImage: `url(${imgSrc})`,
         backgroundPosition: "center center",
         backgroundSize: "cover",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
+        position: "relataive",
+        borderBottom: "2px solid #555",
+        // top: 0,
+        // left: 0,
+        // display: "flex",
+        // flexDirection: "column",
+        // justifyContent: "flex-end",
       }}
     >
-      <Box sx={{ width: "80%", margin: "0 auto" }}>{children}</Box>
+      <Box
+        sx={{
+          width: "100%",
+          margin: "0 auto",
+          position: "absolute",
+          backgroundColor: "rgba(0, 0, 0, 0.8)",
+          padding: "1rem",
+          bottom: "0",
+          left: "0",
+        }}
+      >
+        {children}
+      </Box>
     </Box>
   );
 };

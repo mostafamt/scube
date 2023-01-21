@@ -23,16 +23,19 @@ const Header = () => {
         <SwiperSlide key={idx}>
           <HeaderSlide imgSrc={sliderImage}>
             <Typography
-              variant="h3"
+              variant="h4"
               sx={{
                 color: "#fff",
                 textTransform: "uppercase",
                 letterSpacing: "3px",
               }}
+              textAlign="center"
             >
               {SliderHeaders[idx]}
             </Typography>
-            <Typography sx={{ color: "#fff" }}>{SliderText[idx]}</Typography>
+            <Typography sx={{ color: "#fff" }} textAlign="center">
+              {SliderText[idx]}
+            </Typography>
           </HeaderSlide>
         </SwiperSlide>
       ))}

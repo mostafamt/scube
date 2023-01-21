@@ -523,16 +523,25 @@ code {
 .contact .list li {
   display: flex;
   align-items: center;
-  margin: 1rem 0;
+  margin: 1rem 0 0;
 }
 
 .contact .list li .MuiSvgIcon-root {
   margin-right: 0.3rem;
 }
 
+.contact .school-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 3.5rem;
+  /* border: 1px solid white; */
+}
+
 .contact .school-info img {
-  width: 15rem;
-  margin-bottom: 4rem;
+  width: 9rem;
+  align-self: center;
+  transform: translateX(-1rem);
 }
 
 .contact .copyright {

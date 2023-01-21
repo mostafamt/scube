@@ -10,12 +10,33 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination, Navigation } from "swiper";
 
+const teacherImgs = [
+  "/assets/teacher-1.jpg",
+  "/assets/teacher-2.jpg",
+  "/assets/teacher-3.jpg",
+  "/assets/teacher-4.jpg",
+];
+
+const teacherNames = [
+  "Teacher Name",
+  "Teacher Name",
+  "Teacher Name",
+  "Teacher Name",
+];
+
+const teacherMajors = [
+  "Physics Teacher",
+  "Physics Teacher",
+  "Physics Teacher",
+  "Physics Teacher",
+];
+
 const Teachers = () => {
   return (
     <Box className="teachers">
       <Container>
         <Typography variant="h2" className="section-title">
-          Teachers / Employees of the Month
+          Teachers of the Month
         </Typography>
 
         <Grid container spacing={4}>
@@ -28,57 +49,34 @@ const Teachers = () => {
               <Swiper
                 slidesPerView={3}
                 spaceBetween={30}
-                // pagination={{
-                //   clickable: true,
-                // }}
                 navigation={true}
                 modules={[Navigation]}
                 className="mySwiper"
               >
-                <SwiperSlide>
-                  <img
-                    src="/assets/teacher-1.jpg"
-                    alt="teacher-3"
-                    height={"100%"}
-                  />
-                  <Box className="img-content">
-                    <Typography>Teacher Name</Typography>
-                    <Typography>Physics Teacher</Typography>
-                  </Box>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="/assets/teacher-2.jpg"
-                    alt="teacher-3"
-                    height={"100%"}
-                  />
-                  <Box className="img-content">
-                    <Typography>Teacher Name</Typography>
-                    <Typography>Physics Teacher</Typography>
-                  </Box>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="/assets/teacher-3.jpg"
-                    alt="teacher-3"
-                    height={"100%"}
-                  />
-                  <Box className="img-content">
-                    <Typography>Teacher Name</Typography>
-                    <Typography>Physics Teacher</Typography>
-                  </Box>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="/assets/teacher-4.jpg"
-                    alt="teacher-3"
-                    height={"100%"}
-                  />
-                  <Box className="img-content">
-                    <Typography>Teacher Name</Typography>
-                    <Typography>Physics Teacher</Typography>
-                  </Box>
-                </SwiperSlide>
+                {teacherImgs.map((img, idx) => (
+                  <SwiperSlide key={idx}>
+                    <Box
+                      sx={{
+                        height: "100%",
+                        width: "100%",
+                        backgroundColor: "#555",
+                        color: "#fff",
+                        fontSize: "5rem",
+                        fontWeight: "100",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      ?
+                    </Box>
+                    {/* <img src={img} alt="teacher-3" height={"100%"} /> */}
+                    {/* <Box className="img-content">
+                      <Typography>{teacherNames[idx]}</Typography>
+                      <Typography>{teacherMajors[idx]}</Typography>
+                    </Box> */}
+                  </SwiperSlide>
+                ))}
               </Swiper>
             </div>
           </Grid>

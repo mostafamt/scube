@@ -27,16 +27,38 @@ export const displayPages = [
 
 export const paths = ["/", "/why-scube", "/about-us", "/services", "/contact"];
 
-export const SliderImages = ["/assets/2.png", "/assets/3.png", "/assets/4.png"];
+export const SliderImages = [
+  "/assets/school.jpg",
+  "/assets/collection.png",
+  "/assets/idea-1.jpg",
+  "/assets/idea-2.jpg",
+  "/assets/idea-3.webp",
+  "/assets/idea-4.png",
+  // "/assets/2.png",
+  // "/assets/3.png",
+  // "/assets/4.png",
+];
 export const SliderHeaders = [
-  "One Size Does Not Fit All",
-  "Private Tutoring",
-  "SCube is Different",
+  "IPS",
+  "School Activities",
+  "Get the maximum value",
+  "Fun Learning",
+  "With the Adaptive/Personalized Learning of SCube، No more Private Tutoring",
+  "Use your favorite language",
+  // "One Size Does Not Fit All",
+  // "Private Tutoring",
+  // "SCube is Different",
 ];
 export const SliderText = [
-  "Students come from a variety of backgrounds, cultures, schools, and learning abilities, so we cannot think that one curriculum, or one pair of pants, can fit all.",
-  "One-on-One (private) tutoring increases performance to around 98% in a standard classroom [Bloom,1984].",
-  "Delivers Personalized teaching strategies to match each learner's learning style Merged FSLSM + Kolb's models (Scube Model)",
+  "International Public School",
+  "Some activities at the school",
+  "The teacher is with you in the classroom for teaching and SCube goes with you to home for studying and learning",
+  "Fun learning, no more tears",
+  "SCube is the First e-Learning Platform that considers the individual learning differences for each learner",
+  "Use your favorite language when studying, SCube translates automatically",
+  // "Students come from a variety of backgrounds, cultures, schools, and learning abilities, so we cannot think that one curriculum, or one pair of pants, can fit all.",
+  // "One-on-One (private) tutoring increases performance to around 98% in a standard classroom [Bloom,1984].",
+  // "Delivers Personalized teaching strategies to match each learner's learning style Merged FSLSM + Kolb's models (Scube Model)",
 ];
 
 export const WhyScubeIcons = [

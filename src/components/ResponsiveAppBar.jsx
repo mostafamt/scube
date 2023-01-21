@@ -156,7 +156,7 @@ function ResponsiveAppBar() {
               display: { xs: "none", md: "flex" },
             }}
           >
-            <img src="/assets/school-logo.png" alt="school-logo" height="80" />
+            <img src="/assets/school-logo.png" alt="school-logo" height="72" />
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
