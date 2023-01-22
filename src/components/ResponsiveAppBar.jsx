@@ -61,7 +61,7 @@ function ResponsiveAppBar() {
         <Toolbar disableGutters>
           <Box
             sx={{
-              flexGrow: 3,
+              flexGrow: 10,
               display: { xs: "none", md: "flex" },
               textDecoration: "none",
             }}
@@ -70,11 +70,20 @@ function ResponsiveAppBar() {
           </Box>
           <Box
             sx={{
-              flexGrow: 10,
+              flexGrow: 1,
               display: { xs: "none", md: "flex" },
             }}
           >
-            <img src="/assets/silk-logo.png" alt="slik" height={"80"} />
+            {/* <img src="/assets/silk-logo.png" alt="slik" height={"80"} /> */}
+            <Typography
+              sx={{
+                fontFamily: "'Bubblegum Sans', cursive",
+                color: "#D4AF37",
+                fontSize: "3rem",
+              }}
+            >
+              SILK MS
+            </Typography>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -127,7 +136,7 @@ function ResponsiveAppBar() {
           </Box>
           <Box
             sx={{
-              flexGrow: 8,
+              flexGrow: 4,
               display: { xs: "none", md: "flex" },
             }}
           >
