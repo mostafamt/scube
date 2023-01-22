@@ -9,7 +9,9 @@ const Events = () => {
     <Box className="events">
       <Container>
         <Box className="event">
-          <Typography className="title">Events</Typography>
+          <Typography className="sub-header" textAlign={"left"}>
+            Events
+          </Typography>
           <ul className="list">
             <li>
               <Link className="item">
@@ -38,7 +40,9 @@ const Events = () => {
           </ul>
         </Box>
         <Box>
-          <Typography className="title">Announcements / News</Typography>
+          <Typography className="sub-header" textAlign={"left"}>
+            Announcements / News
+          </Typography>
           <ul className="list">
             <li>
               <Link className="item">

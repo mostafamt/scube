@@ -34,7 +34,8 @@ const teacherMajors = [
 const Teachers = () => {
   return (
     <Box className="teachers">
-      <Container>
+      <div className="container">
+        {/* <Container> */}
         <Typography variant="h2" className="section-title">
           Teachers of the Month
         </Typography>
@@ -82,7 +83,7 @@ const Teachers = () => {
           </Grid>
           <Grid item xs={4}>
             <Box className="message">
-              <Typography component="h6" className="message-title">
+              <Typography className="sub-header">
                 Message to Teachers
               </Typography>
               <Typography>
@@ -97,7 +98,8 @@ const Teachers = () => {
             </Box>
           </Grid>
         </Grid>
-      </Container>
+        {/* </Container> */}
+      </div>
     </Box>
   );
 };

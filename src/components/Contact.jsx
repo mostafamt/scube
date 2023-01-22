@@ -38,13 +38,40 @@ const contactIcons = [
 
 const Contact = () => {
   return (
-    <Box className="contact">
-      <Container maxWidth="xl">
+    <footer className="contact" id="contact">
+      {/* <Container maxWidth="xl"> */}
+      {/* <img src="/assets/footer-bg-1.png" alt="footer" /> */}
+      <div className="container">
         <Typography variant="h2" className="section-title">
           Get in Touch
         </Typography>
 
-        <Grid container spacing={8} className="grid">
+        <img
+          src="/assets/cloud.png"
+          alt="cloud"
+          className="contact cloud-img"
+        />
+
+        <img
+          src="/assets/cloud-1.png"
+          alt="cloud"
+          className="contact cloud-img-1"
+        />
+
+        <img src="/assets/sun.png" alt="cloud" className="contact sun-img" />
+
+        <img
+          src="/assets/pencil_boy.png"
+          alt="pencil_boy"
+          className="contact pencil-boy"
+        />
+        <img
+          src="/assets/pencil_girl.png"
+          alt="pencil_boy"
+          className="contact pencil-girl"
+        />
+
+        <Grid container spacing={{ xl: 16, lg: 8 }} className="grid">
           <Grid item xs={3}>
             <Box className="contact-scube">
               <img src="/assets/scube.png" alt="logo" />
@@ -97,7 +124,18 @@ const Contact = () => {
                   </Grid>
                 ))}
                 <Grid item xs={12} textAlign="center">
-                  <Button type="submit" variant="contained">
+                  <Button
+                    type="submit"
+                    variant="contained"
+                    sx={{
+                      backgroundColor: "#fff",
+                      color: "rgb(25, 118, 210)",
+
+                      "&:hover": {
+                        color: "#fff",
+                      },
+                    }}
+                  >
                     Send Message
                   </Button>
                 </Grid>
@@ -109,11 +147,12 @@ const Contact = () => {
             <ul className="list">
               <li>
                 <LocationOnOutlined />
-                Zahraa Nasr City, beside to Tulip club
+                4000 Residences of the Armed Forces Officers - in front of Maj.
+                Gen. Maged Saleh Mosque - Zahraa, Nasr City - Cairo
               </li>
               <li>
                 <LocalPhoneOutlined />
-                02 23835443
+                02 23835443 - 010 2412 1784
               </li>
               <li>
                 <MailOutlineOutlined />
@@ -122,14 +161,15 @@ const Contact = () => {
             </ul>
           </Grid>
         </Grid>
-      </Container>
+        {/* </Container> */}
+      </div>
       <Box className="copyright">
         <Typography>
           Copyright &copy; 2023 SCube for Education Technology. All Rights
           Reserved
         </Typography>
       </Box>
-    </Box>
+    </footer>
   );
 };
 

@@ -62,30 +62,49 @@ const studentImgTexts = [
 const Students = () => {
   return (
     <Box className="students">
-      <Container>
+      <img src="/assets/garden.png" alt="garden" className="garden" />
+      <img
+        src="/assets/play_pencil_girl.png"
+        alt="garden"
+        className="garden-girl"
+      />
+      <img
+        src="/assets/play_pencil_boy.png"
+        alt="garden"
+        className="garden-boy"
+      />
+      <div className="container">
         <Typography variant="h2" className="section-title">
           Stars of The month
         </Typography>
 
         <MGrid container spacing={4}>
           <MGrid item xs={8}>
-            <div
-              style={{
-                height: "26rem",
-              }}
+            <Box
+              sx={
+                {
+                  // height: "20rem",
+                  // minHeight: "26rem",
+                  // maxBlockSize: "26rem",
+                  // maxHeight: "5rem",
+                }
+              }
             >
               <Swiper
                 navigation={true}
                 modules={[Navigation]}
                 className="mySwiper"
+                style={{
+                  width: "100%",
+                }}
               >
                 {studentImgs.map((slide, index) => (
-                  <SwiperSlide>
-                    {studentImgs[index].map((img) => (
-                      <Box className="img-box">
+                  <SwiperSlide key={index}>
+                    {studentImgs[index].map((img, idx) => (
+                      <Box key={idx} className="img-box">
                         <Box
                           sx={{
-                            height: "100%",
+                            minHeight: "15rem",
                             width: "100%",
                             backgroundColor: "#555",
                             color: "#fff",
@@ -98,8 +117,8 @@ const Students = () => {
                         >
                           ?
                         </Box>
-                        {/* <img src={img} alt="student" /> */}
-                        {/* <Box className="img-content">
+                        {/* <img src={img} alt="student" />
+                        <Box className="img-content">
                           <Typography>Student Name</Typography>
                           <Typography>Grade 4</Typography>
                         </Box> */}
@@ -108,13 +127,11 @@ const Students = () => {
                   </SwiperSlide>
                 ))}
               </Swiper>
-            </div>
+            </Box>
           </MGrid>
           <MGrid item xs={4}>
             <Box className="message">
-              <Typography component="h6" className="message-title">
-                Message to Parents
-              </Typography>
+              <Typography className="sub-header">Message to Parents</Typography>
               <Typography>
                 Our students of today are the leaders of tomorrow; their
                 learning knowledge are the society-uplifting arm, as much
@@ -126,7 +143,8 @@ const Students = () => {
             </Box>
           </MGrid>
         </MGrid>
-      </Container>
+        {/* </Container> */}
+      </div>
     </Box>
   );
 };

@@ -1,9 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Performance from "../components/Performance";
 import Header from "../components/Header";
 import WhyScube from "../components/WhyScube";
-import Story from "../components/Story";
+import Message from "../components/Message";
 import Services from "../components/Services";
 import Contact from "../components/Contact";
 import Teachers from "../components/Teachers";
@@ -14,8 +12,7 @@ const Scube = () => {
     <div>
       <Header />
       <WhyScube />
-      {/* <Performance /> */}
-      <Story />
+      <Message />
       <Services />
       <Students />
       <Teachers />

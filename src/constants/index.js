@@ -20,12 +20,18 @@ export const pages = [
 export const displayPages = [
   "Scube",
   "Why Scube",
-  "About Us",
+  "Our Message",
   "Services",
   "Contact",
 ];
 
-export const paths = ["/", "/why-scube", "/about-us", "/services", "/contact"];
+export const paths = [
+  "header",
+  "why-scube",
+  "our-message",
+  "services",
+  "contact",
+];
 
 export const SliderImages = [
   "/assets/school.jpg",
@@ -33,7 +39,7 @@ export const SliderImages = [
   "/assets/idea-1.jpg",
   "/assets/idea-2.jpg",
   "/assets/idea-3.webp",
-  "/assets/idea-4.png",
+  "/assets/idea-4.jpg",
   // "/assets/2.png",
   // "/assets/3.png",
   // "/assets/4.png",

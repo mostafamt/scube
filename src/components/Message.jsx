@@ -36,49 +36,73 @@ const Story = () => {
   };
 
   return (
-    <Box className="story">
-      <Container>
+    <section className="story" id="our-message">
+      <img src="/assets/arrow.png" alt="arrow" className="arrow-img" />
+
+      {/* <Container> */}
+      <div className="container">
         <Typography variant="h2" className="section-title">
           Our Message
         </Typography>
-        <Grid container spacing={8}>
-          <Grid item xs={7}>
-            <Box className="img">
-              <img
-                src="https://randomuser.me/api/portraits/men/79.jpg"
-                alt="principal photo"
-                style={{
-                  borderRadius: "50%",
-                }}
-              />
-            </Box>
+        <Grid container columnSpacing={8} style={{}}>
+          <Grid
+            item
+            xs={8}
+            style={{
+              display: "flex",
+              gap: "2rem",
+              alignItems: "center",
+            }}
+          >
+            <img src="/assets/principal.jpg" alt="principal" height="400" />
             <Box>
-              <Typography align="center">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Consequuntur quisquam dolore rem dignissimos nesciunt cum natus
-                quos a odio labore soluta est inventore tempore facilis totam
-                nostrum in provident suscipit cupiditate voluptatibus, eos autem
-                illum voluptatem. Reiciendis nulla provident repellendus.
-                Necessitatibus cum rem dolor iure ea aliquid et! Atque quos
-                cupiditate, doloremque maxime magni, nam quisquam alias
-                necessitatibus veritatis voluptatem sit. Corrupti, voluptatum,
-                nulla delectus reprehenderit omnis, magnam ducimus iusto in sed
-                recusandae dignissimos quidem illum iste voluptas
-                necessitatibus! Veritatis doloribus fugiat similique.
-                Consequatur, iste qui consequuntur eaque ducimus delectus quos,
-                aspernatur maxime rem quaerat aliquid veritatis debitis harum
-                illum?
+              {/* <Typography
+                variant="h4"
+                sx={{
+                  marginBottom: "2rem",
+
+                  // "& ::after": {
+                  //   content: "",
+                  //   display: "block",
+                  //   backgroundColor: "red",
+                  //   width: "100px",
+                  //   height: "5px",
+                  // },
+                }}
+              >
+                Principal's Welcome
+              </Typography> */}
+              <Typography align="justify" sx={{ marginBottom: "2rem" }}>
+                As Principal I wish you a very warm welcome to Our School! We
+                are at the heart of the Cairo community and in 2010 we have
+                succeeded in providing local families an excellent education
+                delivered by exceptional teachers in award winning facilities.
+              </Typography>
+              <Typography align="justify" sx={{ marginBottom: "2rem" }}>
+                Judged as a good school by Ofsted our achievements can be seen
+                through rapid improvements in education. We are also making key
+                strides towards creating an school which makes a significant
+                difference to the community we serve and that provides
+                opportunities for all our pupils and students.
+              </Typography>
+              <Typography sx={{ marginBottom: "2rem" }}>
+                <strong>Mrs Joanna McQuaid</strong>, Principal
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={5}>
+          <Grid item xs={4}>
             <Box className="story-right">
-              <Typography variant="h4">Our Story</Typography>
-              <Typography>
+              <Typography className="sub-header">Our Story</Typography>
+              <Typography sx={{ margin: "1rem 0" }}>
                 Our team comes with the experience and knowledge
               </Typography>
               <Box>
-                <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+                <Box
+                  sx={{
+                    borderBottom: 1,
+                    borderColor: "divider",
+                  }}
+                >
                   <Tabs
                     value={value}
                     onChange={handleChange}
@@ -88,7 +112,13 @@ const Story = () => {
                     <Tab label="Our Mission" {...a11yProps(1)} />
                   </Tabs>
                 </Box>
-                <TabPanel value={value} index={0}>
+                <TabPanel
+                  value={value}
+                  index={0}
+                  sx={{
+                    padding: 0,
+                  }}
+                >
                   Our vision is to initiate and lead the science of Intelligent
                   e- Learning and to pioneer and constantly grow to become the
                   lead exporter of innovative Intelligent e-Learning
@@ -113,8 +143,9 @@ const Story = () => {
             </Box>
           </Grid>
         </Grid>
-      </Container>
-    </Box>
+        {/* </Container> */}
+      </div>
+    </section>
   );
 };
 

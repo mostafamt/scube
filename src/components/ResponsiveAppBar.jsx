@@ -26,7 +26,7 @@ function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const { pathname } = useLocation();
+  // const { pathname } = useLocation();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -43,10 +43,16 @@ function ResponsiveAppBar() {
     setAnchorElUser(null);
   };
 
+  const handleClickLink = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    element.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <AppBar
-      position="static"
+      position="sticky"
       sx={{
+        // backgroundColor: "#FFF",
         backgroundImage:
           "linear-gradient(135deg, rgb(32, 167, 172) 11%, rgb(33, 138, 174) 49%, rgb(24, 42, 115) 100% )",
       }}
@@ -68,16 +74,6 @@ function ResponsiveAppBar() {
               display: { xs: "none", md: "flex" },
             }}
           >
-            {/* <Typography
-              sx={{
-                fontSize: "2rem",
-                fontWeight: "400",
-                padding: 0,
-                margin: 0,
-              }}
-            >
-              SILK MS
-            </Typography> */}
             <img src="/assets/silk-logo.png" alt="slik" height={"80"} />
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -136,17 +132,15 @@ function ResponsiveAppBar() {
             }}
           >
             <ul className="list-items">
-              {displayPages.map((page, idx) =>
-                pathname === paths[idx] ? (
-                  <Link key={idx} className="list-link" to={paths[idx]}>
-                    <li className="list-item  active">{page}</li>
-                  </Link>
-                ) : (
-                  <Link key={idx} className="list-link" to={paths[idx]}>
-                    <li className="list-item">{page}</li>
-                  </Link>
-                )
-              )}
+              {displayPages.map((page, idx) => (
+                <Link
+                  key={idx}
+                  className="list-link"
+                  onClick={() => handleClickLink(paths[idx])}
+                >
+                  <li className="list-item">{page}</li>
+                </Link>
+              ))}
             </ul>
           </Box>
 
@@ -206,9 +200,9 @@ function ResponsiveAppBar() {
                 </Menu>
               </>
             ) : (
-              <Button variant="contained" onClick={() => dispatch(login())}>
+              <button className="my-button" onClick={() => dispatch(login())}>
                 Log in
-              </Button>
+              </button>
             )}
           </Box>
         </Toolbar>

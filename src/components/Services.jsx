@@ -9,7 +9,7 @@ import {
   LocalLibraryOutlined,
   QuestionAnswerOutlined,
 } from "@mui/icons-material";
-import Events from "./Events/Events";
+import Events from "./Events";
 
 const serviceCardIcons = [
   <LaptopMacOutlined />,
@@ -38,32 +38,35 @@ const serviceCardTexts = [
 
 const Services = () => {
   return (
-    <Box className="services">
-      {/* <Container> */}
-      <Typography variant="h2" className="section-title" align="center">
-        What Services We Provide
-      </Typography>
-      <Grid container spacing={6}>
-        <Grid item xs={9}>
-          <Grid container spacing={4}>
-            {serviceCardIcons.map((icon, idx) => (
-              <Grid key={idx} item xs={4}>
-                <ServicesCard
-                  className="service-card"
-                  icon={icon}
-                  title={serviceCardHeaders[idx]}
-                  text={serviceCardTexts[idx]}
-                />
-              </Grid>
-            ))}
+    <section className="services" id="services">
+      <img src="/assets/stars.png" alt="stars" className="stars" />
+      <div className="container">
+        {/* <Container> */}
+        <Typography variant="h2" className="section-title" align="center">
+          What Services We Provide
+        </Typography>
+        <Grid container spacing={6}>
+          <Grid item xs={8}>
+            <Grid container spacing={4}>
+              {serviceCardIcons.map((icon, idx) => (
+                <Grid key={idx} item xs={4}>
+                  <ServicesCard
+                    className="service-card"
+                    icon={icon}
+                    title={serviceCardHeaders[idx]}
+                    text={serviceCardTexts[idx]}
+                  />
+                </Grid>
+              ))}
+            </Grid>
+          </Grid>
+          <Grid item xs={4}>
+            <Events />
           </Grid>
         </Grid>
-        <Grid item xs={3}>
-          <Events />
-        </Grid>
-      </Grid>
-      {/* </Container> */}
-    </Box>
+        {/* </Container> */}
+      </div>
+    </section>
   );
 };
 

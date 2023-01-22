@@ -53,6 +53,15 @@ code {
   text-align: justify;
 }
 
+.sub-header {
+  font-size: 1.4rem !important ;
+  color: #555;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem !important;
+  font-weight: 100 !important;
+  /* text-align: center; */
+}
+
 /* APPBAR */
 .list-items {
   list-style: none;
@@ -89,6 +98,7 @@ code {
 /* Why Scube */
 .why-scube {
   padding: 4rem 2rem;
+  position: relative;
 }
 
 .why-scube-cards {
@@ -116,16 +126,18 @@ code {
   transition: transform 0.3s;
   transform: scale(1.05);
   color: #555;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .why-scube-card:hover {
   transform: translateY(-8px) scale(1.1);
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
 }
 
 .why-scube-card .MuiSvgIcon-root {
   font-size: 3.4rem !important;
   color: var(--teal) !important;
+  stroke: #fff;
 }
 
 .why-scube-card-header {
@@ -136,13 +148,6 @@ code {
 .why-scube .performance {
   background-color: #fff;
   padding: 0rem !important ;
-}
-
-.why-scube .performance-header {
-  font-size: 1.3rem !important ;
-  /* text-align: center; */
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
 }
 
 .why-scube .progressbars {
@@ -203,12 +208,15 @@ code {
 /* STORY */
 .story {
   background-color: #fff;
-  padding: 4rem;
+  padding: 4rem 0;
   color: #555;
+  position: relative;
 }
 
-.story .story-right {
-  margin-top: 2rem;
+.story .arrow-img {
+  position: absolute;
+  top: 22%;
+  left: 60%;
 }
 
 .story .img {
@@ -217,9 +225,15 @@ code {
 
 /* SERVICES */
 .services {
-  /* background-color: #fff; */
   padding: 4rem 1rem;
   color: #555;
+  position: relative;
+}
+
+.services .stars {
+  position: absolute;
+  top: 7%;
+  left: 70%;
 }
 
 .services .service-card {
@@ -244,9 +258,11 @@ code {
 }
 
 .services .service-card .MuiSvgIcon-root {
-  color: var(--teal);
+  /* color: var(--teal); */
   font-size: 3.4rem;
-  stroke-width: 2;
+  /* stroke: green; */
+  stroke: #fff;
+  fill: var(--teal);
 }
 
 .services .MuiSvgIcon-root path {
@@ -305,8 +321,32 @@ code {
 
 /* STUDENTS */
 .students {
-  padding: 4rem 0;
+  padding: 4rem 0 20rem;
   background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.students .garden {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+}
+.students .garden-girl {
+  position: absolute;
+  bottom: 11%;
+  left: 6%;
+  height: 12rem;
+  margin: 0 auto;
+}
+
+.students .garden-boy {
+  position: absolute;
+  bottom: 9%;
+  right: 5%;
+  height: 12rem;
+  margin: 0 auto;
 }
 
 .students .swiper {
@@ -322,24 +362,26 @@ code {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  row-gap: 0.7rem;
 }
 
 .students .img-box {
-  height: 42%;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10.5rem;
-  background-color: #000;
+  width: 24%;
+  overflow: hidden;
   position: relative;
+  height: 14rem;
+  background-color: #000;
 }
 
 .students .swiper-slide img {
-  flex-shrink: 0;
   min-width: 100%;
   min-height: 100%;
   height: 100%;
+  object-fit: cover;
   opacity: 0.8;
   transition: all 0.3s;
 }
@@ -388,7 +430,7 @@ code {
 /* TEACHERS */
 .teachers {
   /* background-color: #fff; */
-  padding: 4rem;
+  padding: 4rem 0;
 }
 
 .teachers .swiper {
@@ -456,9 +498,12 @@ code {
 
 /* COTACT */
 .contact {
-  padding: 4rem 0 0;
-  background-color: #333;
+  padding: 20rem 0 0;
+  margin-top: -5rem;
+  /* background-color: #333; */
   color: #fff;
+  background-image: url(../public/assets/footer-bg-1.png);
+  position: relative;
 }
 
 .contact .section-title {
@@ -468,6 +513,49 @@ code {
 
 .contact .MuiSvgIcon-root {
   color: #fff;
+  stroke: #555;
+}
+
+.contact .cloud-img {
+  position: absolute;
+  top: 50%;
+  left: 18%;
+  height: 3rem;
+  padding: 0;
+}
+
+.contact .cloud-img-1 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  height: 3rem;
+  padding: 0;
+}
+
+.contact .sun-img {
+  position: absolute;
+  top: 47%;
+  left: 73%;
+  height: 8rem;
+  padding: 0;
+}
+
+.contact .pencil-boy {
+  position: absolute;
+  top: 70%;
+  left: 75%;
+  height: 6rem;
+  padding: 0;
+  background-color: transparent;
+}
+
+.contact .pencil-girl {
+  position: absolute;
+  /* top: 90%; */
+  bottom: 6.5%;
+  left: 20%;
+  height: 6rem;
+  padding: 0;
 }
 
 .contact .grid {
@@ -492,6 +580,8 @@ code {
 .contact .scube-info .MuiSvgIcon-root {
   font-size: 1.4rem;
   margin-right: 0.3rem;
+  /* fill: #555; */
+  stroke: #555;
 }
 
 .contact .scube-info p {
@@ -513,6 +603,7 @@ code {
 
 .contact form .MuiSvgIcon-root {
   font-size: 2rem;
+  stroke: #555;
 }
 
 .contact .list {
@@ -534,7 +625,7 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 3.5rem;
+  gap: 1rem;
   /* border: 1px solid white; */
 }
 
@@ -549,4 +640,83 @@ code {
   padding: 1rem;
   margin-top: 2rem;
   text-align: center;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* .my-button {
+  background-color: transparent;
+  color: rgb(249, 250, 251);
+  padding: 0.5rem 1rem;
+  border: 1px solid rgb(249, 250, 251);
+  cursor: pointer;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.my-button:hover {
+  color: #fff !important;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #fff inset !important;
+} */
+
+.my-button {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    var(--teal) 100%
+  );
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(228, 226, 232, 0.4) 0 2px 4px,
+    rgba(126, 109, 162, 0.3) 0 7px 13px -3px,
+    rgba(162, 164, 177, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  /* font-family: "JetBrains Mono", monospace; */
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.my-button:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.my-button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.my-button:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.css-19kzrtu {
+  padding: 1rem 0 !important ;
 }

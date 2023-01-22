@@ -9,37 +9,39 @@ import { SliderImages, SliderHeaders, SliderText } from "../constants";
 
 const Header = () => {
   return (
-    <Swiper
-      loop={true}
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-      }}
-      navigation={true}
-      modules={[Autoplay, Pagination, Navigation]}
-      className="mySwiper"
-    >
-      {SliderImages.map((sliderImage, idx) => (
-        <SwiperSlide key={idx}>
-          <HeaderSlide imgSrc={sliderImage}>
-            <Typography
-              variant="h4"
-              sx={{
-                color: "#fff",
-                textTransform: "uppercase",
-                letterSpacing: "3px",
-              }}
-              textAlign="center"
-            >
-              {SliderHeaders[idx]}
-            </Typography>
-            <Typography sx={{ color: "#fff" }} textAlign="center">
-              {SliderText[idx]}
-            </Typography>
-          </HeaderSlide>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <section id="header">
+      <Swiper
+        loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        {SliderImages.map((sliderImage, idx) => (
+          <SwiperSlide key={idx}>
+            <HeaderSlide imgSrc={sliderImage}>
+              <Typography
+                variant="h5"
+                sx={{
+                  color: "#fff",
+                  textTransform: "uppercase",
+                  letterSpacing: "3px",
+                }}
+                textAlign="center"
+              >
+                {SliderHeaders[idx]}
+              </Typography>
+              <Typography sx={{ color: "#fff" }} textAlign="center">
+                {SliderText[idx]}
+              </Typography>
+            </HeaderSlide>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
   );
 };
 

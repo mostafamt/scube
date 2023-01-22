@@ -9,7 +9,7 @@ const WhyScubeCard = ({ icon, header, text }) => {
       <Typography variant="h4" className="why-scube-card-header">
         {header}
       </Typography>
-      <Typography>{text}</Typography>
+      <Typography textAlign={"justify"}>{text}</Typography>
     </Box>
   );
 };
